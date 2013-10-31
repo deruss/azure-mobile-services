@@ -63,7 +63,7 @@ namespace Windows.Data.Json
 
 		public string Stringify ()
 		{
-			return this.value.ToString();
+            return this.value.ToString().Replace("\n", "\\n");
 		}
 
 		internal System.Json.JsonValue ToSystemValue()
